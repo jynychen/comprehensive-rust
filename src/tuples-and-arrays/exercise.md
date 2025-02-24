@@ -1,12 +1,12 @@
 ---
-minutes: 30
+minutes: 15
 ---
 
 # Exercise: Nested Arrays
 
 Arrays can contain other arrays:
 
-```rust
+```rust,editable
 let array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 ```
 
@@ -23,17 +23,12 @@ transpose a matrix (turn rows into columns):
            ⎝⎣7 8 9⎦⎠      ⎣3 6 9⎦
 ```
 
-Hard-code both functions to operate on 3 × 3 matrices.
+Copy the code below to <https://play.rust-lang.org/> and implement the function.
+This function only operates on 3x3 matrices.
 
-Copy the code below to <https://play.rust-lang.org/> and implement the
-functions:
-
-```rust,should_panic
-// TODO: remove this when you're done with your implementation.
-#![allow(unused_variables, dead_code)]
-
+```rust,should_panic,editable
 {{#include exercise.rs:transpose}}
-    unimplemented!()
+    todo!()
 }
 
 {{#include exercise.rs:main}}

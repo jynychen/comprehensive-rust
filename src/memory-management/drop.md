@@ -1,5 +1,5 @@
 ---
-minutes: 10
+minutes: 8
 ---
 
 # The `Drop` Trait
@@ -25,9 +25,9 @@ fn main() {
         {
             let c = Droppable { name: "c" };
             let d = Droppable { name: "d" };
-            println!("Exiting block B");
+            println!("Exiting innermost block");
         }
-        println!("Exiting block A");
+        println!("Exiting next block");
     }
     drop(a);
     println!("Exiting main");
